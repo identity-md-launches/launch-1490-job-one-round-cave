@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/unsigned-guard/test_guard.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.004s\n\nOK\n",
+  "tests_run": 8,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:52.076682+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

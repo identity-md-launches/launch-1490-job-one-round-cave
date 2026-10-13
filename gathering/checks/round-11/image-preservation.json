@@ -1,0 +1,50 @@
+{
+  "source_record": 10,
+  "record_number": 11,
+  "source_sha256": "3f864c35cf733966310d1c185edcb41d2bec72741756c0429c363824522764b1",
+  "wall_sha256": "dc942e7df0f7ac9f81608e8d9a2adc1c2aa04f9c612fd0e00f9d24a9b065172b",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3811431,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 69384,
+  "generated_motif_dimensions": [
+    1774,
+    887
+  ],
+  "generated_motif_sha256": "846f0281bb6b868058e2bdeac80f87254427263e67ebee84db456519f228334b",
+  "motif_crop": [
+    88,
+    148,
+    1696,
+    737
+  ],
+  "addition_rectangle": [
+    160,
+    150,
+    260,
+    105
+  ],
+  "changed_pixels": 5566,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Installed image tool motif; white paper removed in memory, earth pigment area-averaged into vacant rock.",
+  "visual_review": "Final PNG and decoded JPEG inspected; three pigment trails added only on vacant upper-left rock. All ancestor paintings retained.",
+  "hands": {
+    "inherited_left": 5,
+    "inherited_right": 5,
+    "new_hands_or_stencils": 0,
+    "count": "four fingers and one opposing thumb per hand"
+  },
+  "unmet_visual_requirements": [],
+  "visual_limitations": [
+    "Inherited stone has photographic-looking texture, preserved as requested.",
+    "Small charcoal paths are subdued at 512 px."
+  ]
+}

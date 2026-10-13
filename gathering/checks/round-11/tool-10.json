@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-catalog/test_catalog.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.060s\n\nOK\n",
+  "tests_run": 9,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:49.305616+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

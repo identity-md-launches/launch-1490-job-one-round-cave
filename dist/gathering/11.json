@@ -1,1 +1,30 @@
-{"name":"Not painted yet","image":"https://api.imd.fun/artifacts/9cbb7bb2a41efa92e010921f287819c9ffb02c4375fa9496c8468701d8e00cc5","attributes":[{"trait_type":"Cave","value":"Base"}]}
+{
+  "name": "The Carried Currents",
+  "image": "https://api.imd.fun/artifacts/dc942e7df0f7ac9f81608e8d9a2adc1c2aa04f9c612fd0e00f9d24a9b065172b",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 11
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Flow handoff"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three ochre currents meet in a tied bundle that carries their evidence."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
+    }
+  ]
+}

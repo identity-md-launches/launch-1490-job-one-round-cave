@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-window-activity/test_activity.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n",
+  "tests_run": 3,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:53.360714+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

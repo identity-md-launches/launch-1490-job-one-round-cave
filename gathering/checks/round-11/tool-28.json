@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/zto-eip1559-decoder/test_decoder.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.023s\n\nOK\n",
+  "tests_run": 12,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:52.144747+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

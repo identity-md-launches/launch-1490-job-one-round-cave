@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-counterparties/test_counterparties.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.002s\n\nOK\n",
+  "tests_run": 9,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:53.169153+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

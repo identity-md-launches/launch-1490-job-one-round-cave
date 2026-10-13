@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-window-receipt/test_receipt.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.018s\n\nOK\n",
+  "tests_run": 5,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:53.547837+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

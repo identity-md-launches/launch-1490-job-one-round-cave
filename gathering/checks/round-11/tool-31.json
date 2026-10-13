@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-crosscheck/test_crosscheck.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.026s\n\nOK\n",
+  "tests_run": 15,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:53.287553+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

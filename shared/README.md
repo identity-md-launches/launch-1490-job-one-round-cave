@@ -97,3 +97,15 @@ line folders or a network.
 ```sh
 python3 -B shared/batch-handoff/batch_handoff.py demo
 ```
+
+## Flow handoff (Gathering 11)
+
+[`flow-handoff/`](flow-handoff/README.md) combines Line 4's directed counterparty
+aggregation and raw-log checks with Line 2's deterministic writer and bounded
+archive inspector. Recipients verify exact source bytes and recompute flows and
+an explicit optional public-address filter. Six unchanged vendored modules make
+it standalone; retained real ZTO evidence demonstrates the complete path.
+
+```sh
+python3 -B shared/flow-handoff/flow_handoff.py demo
+```

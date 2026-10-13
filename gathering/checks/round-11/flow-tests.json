@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "shared/flow-handoff/test_flow_handoff.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_address_filter_is_normalized_and_receiver_can_require_it (__main__.Tests.test_address_filter_is_normalized_and_receiver_can_require_it) ... ok\ntest_boolean_event_integer_is_rejected (__main__.Tests.test_boolean_event_integer_is_rejected) ... ok\ntest_cli_standalone_pack_check_and_failures (__main__.Tests.test_cli_standalone_pack_check_and_failures) ... ok\ntest_duplicate_delivery_and_order_do_not_double_count (__main__.Tests.test_duplicate_delivery_and_order_do_not_double_count) ... ok\ntest_empty_and_imd_windows (__main__.Tests.test_empty_and_imd_windows) ... ok\ntest_exact_aggregation_above_uint256_and_self_transfers (__main__.Tests.test_exact_aggregation_above_uint256_and_self_transfers) ... ok\ntest_payload_contract_and_original_writer_profile (__main__.Tests.test_payload_contract_and_original_writer_profile) ... ok\ntest_raw_log_tampering_fails_even_with_fresh_manifest (__main__.Tests.test_raw_log_tampering_fails_even_with_fresh_manifest) ... ok\ntest_rehashed_false_report_is_rejected (__main__.Tests.test_rehashed_false_report_is_rejected) ... ok\ntest_rehashed_filter_switch_is_rejected (__main__.Tests.test_rehashed_filter_switch_is_rejected) ... ok\ntest_retained_real_zto_exact_bytes_determinism_and_provenance (__main__.Tests.test_retained_real_zto_exact_bytes_determinism_and_provenance) ... ok\ntest_schema3_address_summary_is_revalidated (__main__.Tests.test_schema3_address_summary_is_revalidated) ... ok\ntest_strict_json_and_size_limits (__main__.Tests.test_strict_json_and_size_limits) ... ok\ntest_trusted_digest_and_crc_failure (__main__.Tests.test_trusted_digest_and_crc_failure) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.720s\n\nOK\n"
+}

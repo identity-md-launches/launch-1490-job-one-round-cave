@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-review/review.py",
+    "check",
+    "shared/flow-handoff/examples/tried-zto-flows.zip"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"archive_bytes\": 7231,\n  \"archive_sha256\": \"f0ac49f6616425771bc9c9a3626598cf58a46482ed2c73e6b913d6552277f5d4\",\n  \"checks\": {\n    \"integrity\": {\n      \"status\": \"pass\"\n    },\n    \"portability\": {\n      \"issues\": [],\n      \"profile\": \"conservative-filenames-v2\",\n      \"status\": \"pass\"\n    },\n    \"reproduction\": {\n      \"receipt\": {\n        \"archive_bytes\": 7231,\n        \"archive_sha256\": \"f0ac49f6616425771bc9c9a3626598cf58a46482ed2c73e6b913d6552277f5d4\",\n        \"byte_reproducible\": true,\n        \"file_count\": 3,\n        \"first_difference_offset\": null,\n        \"format\": \"handoff-reproduction-v1\",\n        \"payload_bytes\": 6373,\n        \"profile\": \"original-handoff-v1-writer\",\n        \"rebuilt_bytes\": 7231,\n        \"rebuilt_sha256\": \"f0ac49f6616425771bc9c9a3626598cf58a46482ed2c73e6b913d6552277f5d4\",\n        \"trusted_digest_matched\": false,\n        \"verified\": true\n      },\n      \"status\": \"pass\"\n    },\n    \"source\": {\n      \"directory\": null,\n      \"receipt\": null,\n      \"status\": \"not-requested\"\n    }\n  },\n  \"failed_checks\": [],\n  \"file_count\": 3,\n  \"format\": \"handoff-review-v1\",\n  \"limits\": {\n    \"archive_bytes\": 69206016,\n    \"files\": 1000,\n    \"manifest_bytes\": 524288,\n    \"metadata_bytes\": 524288,\n    \"payload_bytes\": 67108864\n  },\n  \"note\": \"Selected format checks only: no sender authentication, payload safety assessment, build reproduction or extraction test. Source scans require a stable workspace and are not atomic snapshots.\",\n  \"payload_bytes\": 6373,\n  \"selected_checks_passed\": true,\n  \"trusted_digest_matched\": false\n}\n",
+  "stderr": ""
+}

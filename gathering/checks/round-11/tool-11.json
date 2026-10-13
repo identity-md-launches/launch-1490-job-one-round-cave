@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-compare/test_compare.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_four_categories (__main__.Comparisons.test_all_four_categories) ... ok\ntest_budget (__main__.Comparisons.test_budget) ... ok\ntest_cli_changed_payload_exit_two (__main__.Comparisons.test_cli_changed_payload_exit_two) ... ok\ntest_cli_no_report_on_invalid_second_archive (__main__.Comparisons.test_cli_no_report_on_invalid_second_archive) ... ok\ntest_cli_same_payload_exit_zero (__main__.Comparisons.test_cli_same_payload_exit_zero) ... ok\ntest_cli_subprocess (__main__.Comparisons.test_cli_subprocess) ... ok\ntest_deterministic_sorted_report (__main__.Comparisons.test_deterministic_sorted_report) ... ok\ntest_invalid_digest (__main__.Comparisons.test_invalid_digest) ... ok\ntest_real_archive_interoperability (__main__.Comparisons.test_real_archive_interoperability) ... ok\ntest_real_source_demo (__main__.Comparisons.test_real_source_demo) ... ok\ntest_rename_is_remove_add (__main__.Comparisons.test_rename_is_remove_add) ... ok\ntest_same_archive (__main__.Comparisons.test_same_archive) ... ok\ntest_same_payload_different_zip_metadata (__main__.Comparisons.test_same_payload_different_zip_metadata) ... ok\ntest_symlink_refused (__main__.Comparisons.test_symlink_refused) ... ok\ntest_tampering_with_valid_crc_is_rejected (__main__.Comparisons.test_tampering_with_valid_crc_is_rejected) ... ok\ntest_trusted_digest (__main__.Comparisons.test_trusted_digest) ... ok\ntest_unicode_and_empty_files (__main__.Comparisons.test_unicode_and_empty_files) ... ok\ntest_workspace_path_guard (__main__.Comparisons.test_workspace_path_guard) ... ok\ntest_wrong_digest (__main__.Comparisons.test_wrong_digest) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.108s\n\nOK\n",
+  "tests_run": 19,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:49.475101+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

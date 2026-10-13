@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/pinned-snapshot/test_pinned.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_capture_pins_actual_number (__main__.Tests.test_capture_pins_actual_number) ... ok\ntest_changed_hash_rejected (__main__.Tests.test_changed_hash_rejected) ... ok\ntest_combined_size_limit (__main__.Tests.test_combined_size_limit) ... ok\ntest_inspect_cli_offline_and_controlled_errors (__main__.Tests.test_inspect_cli_offline_and_controlled_errors) ... ok\ntest_malformed_supply_rejected (__main__.Tests.test_malformed_supply_rejected) ... ok\ntest_offline_tampering_rejected (__main__.Tests.test_offline_tampering_rejected) ... ok\ntest_pending_and_invalid_tags_no_reads (__main__.Tests.test_pending_and_invalid_tags_no_reads) ... ok\ntest_readonly_guard_precedes_network (__main__.Tests.test_readonly_guard_precedes_network) ... ok\ntest_response_limits_and_envelope (__main__.Tests.test_response_limits_and_envelope) ... ok\ntest_wrong_chain_stops_before_call (__main__.Tests.test_wrong_chain_stops_before_call) ... ok\ntest_wrong_explicit_block_stops_before_call (__main__.Tests.test_wrong_explicit_block_stops_before_call) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.011s\n\nOK\n",
+  "tests_run": 11,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:48.877470+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

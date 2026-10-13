@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-window-coverage/test_coverage.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.003s\n\nOK\n",
+  "tests_run": 6,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:53.438448+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

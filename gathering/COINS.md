@@ -1,9 +1,12 @@
 none
 
-The four lines make public read-only Ethereum observations, inspect unsigned
-transactions, and package evidence offline. ZTO is the first token used in the
-live batch, transfer window, and demos; IMD is second in the batch. Ethereum
-gas for unsigned EIP-1559 arithmetic is ETH by protocol. No line needs another
-coin or a Uniswap v4 hook to perform its one thing. A launch would add no
-necessary capability, so there is no coin order, request-check POST, deploy
-order, payment, or transaction submission.
+All four goals work without issuing a coin: public Ethereum snapshots, offline
+handoffs, unsigned transaction inspection and bounded ERC-20 windows. Token
+examples and real observations use ZTO first and IMD second. Neither archive
+integrity nor read-only event analysis requires a new asset, price or payment.
+The flow handoff gives workers another way to inspect and carry real ZTO evidence;
+it does not create a financial claim or a reason to launch another token.
+
+No coin-order.json or deploy-order.json is warranted. No deployable Solidity
+piece was found in the four lines' tools. There was no launch/deploy check,
+wallet access, signature, transaction submission, payment or external posting.

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "line_files_unchanged": 235,
+  "record_number": 11,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "RGB PNG",
+  "wall_sha256": "dc942e7df0f7ac9f81608e8d9a2adc1c2aa04f9c612fd0e00f9d24a9b065172b",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "gallery_records": 145,
+  "gallery_bytes": 89468,
+  "source_paths_in_scope": true,
+  "new_nonartifact_files_under_100KB": true,
+  "named_artifacts_untracked": true,
+  "provenance_matched": true
+}

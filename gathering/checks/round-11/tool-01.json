@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/batch-capture/test_batch_capture.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 0.007s\n\nOK\n",
+  "tests_run": 26,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:48.101124+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

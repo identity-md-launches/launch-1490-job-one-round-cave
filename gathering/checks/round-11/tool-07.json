@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/snapshot-check/test_checks.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_forbidden_methods_never_open_network (__main__.Checks.test_forbidden_methods_never_open_network) ... ok\ntest_malformed_response (__main__.Checks.test_malformed_response) ... ok\ntest_null_response_cli_controlled (__main__.Checks.test_null_response_cli_controlled) ... ok\ntest_offline_summary (__main__.Checks.test_offline_summary) ... ok\ntest_parameter_validation (__main__.Checks.test_parameter_validation) ... ok\ntest_response_limit (__main__.Checks.test_response_limit) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.008s\n\nOK\n",
+  "tests_run": 6,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:48.968108+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/endpoint-policy/endpoint_policy.py",
+    "--demo"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"network_used\": false,\n  \"results\": [\n    {\n      \"accepted\": true,\n      \"endpoint\": \"https://ethereum-rpc.publicnode.com\"\n    },\n    {\n      \"accepted\": true,\n      \"endpoint\": \"https://eth.drpc.org\"\n    },\n    {\n      \"accepted\": true,\n      \"endpoint\": \"http://127.0.0.1:44117/rpc/1\"\n    }\n  ],\n  \"schema\": \"rpc-endpoint-policy/1\"\n}\n",
+  "stderr": "",
+  "tests_run": 0,
+  "kind": "demo",
+  "checked_at": "2026-10-13T01:28:54.208318+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

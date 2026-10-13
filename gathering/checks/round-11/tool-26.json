@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/unsigned-diff/test_unsigned_diff.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.002s\n\nOK\n",
+  "tests_run": 10,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:52.007464+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

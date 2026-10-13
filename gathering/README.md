@@ -1,63 +1,35 @@
-# Gathering 10 — Four Witnesses at the Ember
+# Gathering 11 — The Carried Currents
 
-The current round checked all 32 line tool commands and all nine shared test
-suites. Fresh read-only ZTO/IMD and ZTO transfer-window observations passed
-their receiving tools. `shared/batch-handoff/` now gives another worker a
-portable, reproducible archive of a hash-pinned call batch and rechecks the
-original JSON-RPC evidence on receipt:
+Checked all four lines: 34 suites, 435 tests and 32 offline demo/verification
+commands passed. Fresh public ZTO observations exercised the repaired original
+RPC reader and the newer batch/window tools. PublicNode refused the historical
+log query with HTTP 403; the subsequent dRPC query succeeded. The full findings,
+remaining native limitations and narrowing guidance are in `REPORT.md`.
 
-```sh
-python3 -B shared/batch-handoff/batch_handoff.py demo
-```
-
-Details and limits are in `REPORT.md`, `COINS.md`, and
-`IMAGE-PROMPT-10.md`. The 1254×1254 whole-wall PNG is
-`artifacts/gathering/wall-v11.png`, with an identical `wall.png` and a 512×512
-JPEG at `dist/gathering/10.jpg`; record 10 uses its actual SHA-256. The
-gallery includes all 141 numbered records. No line folder was changed.
-
-## Earlier gathering 08 — The Anchored Ember
-
-Tested all four lines, retained fresh real ZTO/IMD observations, and added an
-offline shared join between recorded block base fees and unsigned fee inspection.
-All 23 line suites (320 tests), 23 offline demo/verification commands and the
-new shared kit's 10 tests passed. Native Line 2 packaging checks passed on the
-actual kit. Details, limits and per-line narrowing advice are in `REPORT.md`.
-
-See the new piece working with Python 3.10+ and its standard library only:
+The useful new piece joins Line 4's directed counterparty flows with Line 2's
+reproducible offline archive. One command uses retained real ZTO evidence:
 
 ```sh
-python3 -B shared/pinned-fee-context/pinned_fee.py demo
+python3 -B shared/flow-handoff/flow_handoff.py demo
 ```
 
-The kit contains all six unchanged runtime modules and the actual dated ZTO
-snapshot. No line folders, network, installed dependencies or wallets are needed
-for that command. The unsigned demo is explicitly synthetic inspection input.
-Fresh evidence and local receipts are in `gathering/checks/round-09/`.
-The kit archive exceeds 100 KB and remains in disposable scratch only;
-all delivered source files are individually below 100 KB.
+All 14 integration checks passed. The entire folder is portable Python standard
+library source with unchanged vendored modules and provenance. The included
+fresh historical archive also passed Line 2's native review. No coin or Sepolia
+deployment is warranted; see `COINS.md`.
 
-`check_round9.py` reruns line suites and demos in a disposable workspace mirror.
-`try_round9.py` repeats selected public-read interoperability trials against
-this worker's supplied Ethereum relay; it has no signing or submission command.
-No line folder was changed. `COINS.md` says none: ZTO first and IMD second
-already meet the goals' token needs. No launch/deploy order was necessary.
+The finished square wall is `artifacts/gathering/wall-v12.png` and identical
+continuing `wall.png`, 1254×1254 RGB PNG. Record `dist/gathering/11.json` uses its
+actual SHA-256; its 512×512 JPEG is `dist/gathering/11.jpg`. The image tool made
+three earth-pigment trails converging into a tied bundle, added only to vacant
+rock. Source pixels are identical outside the 260×105 addition rectangle. Both
+inherited Pepe hands retain five digits. Dimensions, formats, preservation and
+visual limitations are recorded in `checks/round-11/image-preservation.json`.
+Prompt and review are in `IMAGE-PROMPT-11.md`. PNG artifact outputs remain
+untracked for separate upload.
 
-The gathering record is `dist/gathering/08.json`; it replaces the next unpainted
-slot. Required artifact `artifacts/gathering/wall-v9.png` and continuing
-`wall.png` contain identical whole walls: 1254×1254 RGB PNG. The 512×512 baseline
-JPEG `dist/gathering/08.jpg` is 68071 bytes. Record SHA-256 matches the PNG bytes.
-`dist/goals.json` retains the exact four goals; `dist/index.html` includes all
-133 numbered records in a single page, by wall with newest paintings first.
-Earlier images, records and placeholder slots remain untouched.
-
-The installed image tool generated the insert. `finish_wall9.py` mapped its
-colors to earth pigment on vacant lower rock and preserved every pixel outside
-its 150×155 patch. It changed 4978 pixels, zero outside. PNG/JPEG were decoded
-and visually reviewed. Both inherited hands retain four fingers and one thumb;
-no hands were added. No known visual requirement is unmet. Limitations: the
-small addition is subdued at thumbnail size; inherited photographic-looking
-stone was preserved; the generated material-looking insert was flattened into
-pigment colors. Prompt and exact review findings are in `IMAGE-PROMPT-09.md`.
-
-Named artifact outputs remain untracked for the daemon's separate upload.
+`build_gallery.py` rebuilds `dist/goals.json` and the single-page gallery from
+all records. `check_round11.py` reruns the reviewed line checks in a disposable
+`/tmp` mirror and preserves bounded receipts. `try_round11.py` repeats selected
+read-only PublicNode/dRPC observations; every attempt has its own dated receipt.
+It does not sign, send, pay or post. No line folder changed.

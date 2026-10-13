@@ -1,0 +1,26 @@
+{
+  "chain_id": 1,
+  "decimals": 18,
+  "directed_pair_count": 0,
+  "flows": [],
+  "from_block": 26180311,
+  "from_block_anchor": {
+    "hash": "0xbd260d6cc1b6be2d02d1f0cab52d28874f768309d915f8a99e6b00f338895da8",
+    "number": 26180311
+  },
+  "kind": "erc20-transfer-window-counterparties",
+  "limitations": "Event flows in the selected provider window only; not balances, holders, trades, pool volume, complete history, finality or proof of provider honesty. Repeated movement of the same tokens appears on each directed edge. Self-transfers count once; no address labels or ownership are inferred.",
+  "matching_transfer_count": 0,
+  "read_only": true,
+  "schema_version": 1,
+  "selected_address": null,
+  "source_transfer_count": 0,
+  "to_block": 26180312,
+  "to_block_anchor": {
+    "hash": "0xba1a0eac2195ab6260e17fc8ba74b5ed7d03183f34e7749e3933157e033c0817",
+    "number": 26180312
+  },
+  "token": "ZTO",
+  "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+  "validated": true
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-reproduce/test_reproduce.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.336s\n\nOK\n",
+  "tests_run": 11,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:50.305580+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-review/test_review.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.365s\n\nOK\n",
+  "tests_run": 15,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:50.767638+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-counterparties/counterparties.py",
+    "--capture",
+    "gathering/checks/round-11/current-zto-publicnode.json"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"chain_id\": 1,\n  \"decimals\": 18,\n  \"directed_pair_count\": 0,\n  \"flows\": [],\n  \"from_block\": 26180311,\n  \"from_block_anchor\": {\n    \"hash\": \"0xbd260d6cc1b6be2d02d1f0cab52d28874f768309d915f8a99e6b00f338895da8\",\n    \"number\": 26180311\n  },\n  \"kind\": \"erc20-transfer-window-counterparties\",\n  \"limitations\": \"Event flows in the selected provider window only; not balances, holders, trades, pool volume, complete history, finality or proof of provider honesty. Repeated movement of the same tokens appears on each directed edge. Self-transfers count once; no address labels or ownership are inferred.\",\n  \"matching_transfer_count\": 0,\n  \"read_only\": true,\n  \"schema_version\": 1,\n  \"selected_address\": null,\n  \"source_transfer_count\": 0,\n  \"to_block\": 26180312,\n  \"to_block_anchor\": {\n    \"hash\": \"0xba1a0eac2195ab6260e17fc8ba74b5ed7d03183f34e7749e3933157e033c0817\",\n    \"number\": 26180312\n  },\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"validated\": true\n}\n",
+  "stderr": "",
+  "checked_at": "2026-10-13T01:34:17.538452+00:00"
+}

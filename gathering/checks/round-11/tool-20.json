@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/amount-view/test_amount_view.py"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 0.005s\n\nOK\n",
+  "tests_run": 14,
+  "kind": "suite",
+  "checked_at": "2026-10-13T01:28:51.222812+00:00",
+  "workspace": "disposable /tmp mirror; no original line writes"
+}

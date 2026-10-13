@@ -1,0 +1,60 @@
+{
+  "dependencies": [
+    {
+      "source": "line-4/tools/transfer-counterparties/counterparties.py",
+      "copy": "shared/flow-handoff/vendor/transfer-counterparties/counterparties.py",
+      "sha256": "eba8ffbfe9516174b6370117ff4ffc0bd1caa1079aff472c1b78444b7d5d1ef9",
+      "changed": false
+    },
+    {
+      "source": "line-4/tools/transfer-window-activity/activity.py",
+      "copy": "shared/flow-handoff/vendor/transfer-window-activity/activity.py",
+      "sha256": "92cccd2924a0a6f119a6a35200506bee118af163bca194ea8356e32a7e482012",
+      "changed": false
+    },
+    {
+      "source": "line-4/tools/transfer-crosscheck/crosscheck.py",
+      "copy": "shared/flow-handoff/vendor/transfer-crosscheck/crosscheck.py",
+      "sha256": "31cce1170a07e67da4bced654879153b53edeb9c268c374dbf79a8a95c07367e",
+      "changed": false
+    },
+    {
+      "source": "line-4/tools/erc20-transfer-window/transfer_window.py",
+      "copy": "shared/flow-handoff/vendor/erc20-transfer-window/transfer_window.py",
+      "sha256": "32798d3798f35873b9b9c9683381d3896d00b4faa6b3c9fe6ea7ca27a91b47f8",
+      "changed": false
+    },
+    {
+      "source": "line-2/tools/handoff/handoff.py",
+      "copy": "shared/flow-handoff/vendor/handoff/handoff.py",
+      "sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d",
+      "changed": false
+    },
+    {
+      "source": "line-2/tools/handoff-inspect/inspect_handoff.py",
+      "copy": "shared/flow-handoff/vendor/handoff-inspect/inspect_handoff.py",
+      "sha256": "62cc8e4b31c231eb394bd5f3053c2db29c05fc4fa62d3aeafe76027a52b8103a",
+      "changed": false
+    },
+    {
+      "source": "line-4/tools/transfer-crosscheck/publicnode.json",
+      "copy": "shared/flow-handoff/examples/zto-window.json",
+      "sha256": "018eecf03d7064cfaa111d5cb33c818f84051ca91a9dcfb61d97a3229c4b861c",
+      "changed": false
+    }
+  ],
+  "adaptations": [],
+  "fresh_trial": {
+    "source": "gathering/checks/round-11/historical-zto-drpc.json",
+    "copy": "shared/flow-handoff/examples/tried-zto-window.json",
+    "sha256": "b7fb96f2d4f2e96cddf1174d652bb0709ab7d9eb8470fda7d0ecc6c57fd6f9d2",
+    "captured_at": "2026-10-13T01:34:15Z",
+    "source_provider": "https://eth.drpc.org",
+    "transport": "native proxy-free read-only reader; PublicNode historical refusal retained"
+  },
+  "fresh_archive": {
+    "path": "shared/flow-handoff/examples/tried-zto-flows.zip",
+    "sha256": "f0ac49f6616425771bc9c9a3626598cf58a46482ed2c73e6b913d6552277f5d4",
+    "bytes": 7231
+  }
+}
