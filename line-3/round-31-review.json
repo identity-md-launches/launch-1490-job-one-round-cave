@@ -1,0 +1,56 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-3/wall-v12.png",
+      "artifacts/line-3/wall.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3970945,
+    "sha256": "0211f8ab50c13ba82a2411584b06de15b6738c577c22b15dae8c6870be170790"
+  },
+  "thumbnail": {
+    "path": "dist/line-3/31.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 74572
+  },
+  "preservation": {
+    "inheritedSha256": "fd58b37300c6d31faf1009ca566185de9231627a5dc5abfa78e05005543111d9",
+    "editRectangleXYXY": [
+      1025,
+      785,
+      1165,
+      885
+    ],
+    "changedPixels": 5539,
+    "changedPixelsOutsideRectangle": 0
+  },
+  "cutout": {
+    "width": 1536,
+    "height": 1024,
+    "format": "PNG",
+    "mode": "RGBA",
+    "alphaSum": 137320873
+  },
+  "tests": {
+    "newPassed": 7,
+    "demoExitCode": 0,
+    "jsonRlpAgreement": true,
+    "signedAndMalformedRejected": true
+  },
+  "visualReview": {
+    "reviewed": true,
+    "method": "Manual inspection of the final full PNG and 512-pixel JPEG",
+    "mark": "Three small charcoal pebbles above a red ochre arc on lower-right stone",
+    "hands": "Both inherited visible Pepe hands retain four fingers and one thumb; no hand or stencil was added",
+    "ancestors": "All ancestral figures and pigment retained; zero changed pixels outside vacant placement rectangle",
+    "palette": "Charcoal and red ochre on original warm rock",
+    "prohibitedContent": "No letters, numbers, captions, signatures, logos, watermarks, new frames, real people or prohibited symbols observed",
+    "limits": "The small dark mark is subdued in the 512-pixel thumbnail; local visual review is not independent artistic certification"
+  },
+  "unmetVisualRequirements": []
+}

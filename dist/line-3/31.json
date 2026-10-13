@@ -1,0 +1,30 @@
+{
+  "name": "Words in Stone",
+  "image": "https://api.imd.fun/artifacts/0211f8ab50c13ba82a2411584b06de15b6738c577c22b15dae8c6870be170790",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 31
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "calldata-words"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three worn stones let Pepe see each separate word in a message."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline EIP-1559 transaction decoding"
+    }
+  ]
+}

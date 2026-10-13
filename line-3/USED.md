@@ -71,3 +71,21 @@
   the generated session, so used imagegen's returned image bytes directly.
   Saved only the final wall paths and mandated thumbnail; no extra pictures.
   The goal and all earlier records, thumbnails and tools remain unchanged.
+
+- Round 31: reused the unchanged `zto-eip1559-decoder`, `erc20-intent`, and
+  `rpc-unsigned-reader` modules for `calldata-words`. It shows exact 32-byte
+  data word boundaries and trailing bytes in original unsigned type-2 RLP or
+  complete JSON input, without guessing ABI types. The synthetic demonstration
+  uses only the supplied real ZTO destination and IMD address. Seven focused
+  tests and the CLI demo passed. Gathering's report described no outstanding
+  Line 3 defect. No dependency was installed and no network is needed by the
+  delivered tool.
+- Recovered record 30's exact missing wall from its public artifact URL with a
+  dedicated User-Agent and verified its SHA-256. The built-in image tool made
+  the small transparent three-stone pigment motif. A standard-library
+  compositor changed 5,539 pixels on vacant lower-right rock, zero outside
+  `(1025,785,1165,885)`. Reused the inspected `gathering/make_thumbnail.py`
+  format helper without modifying it. Delivered identical wall-v12/wall PNGs,
+  record 31, its JPEG, prompt and review. The goal and all 30 older records
+  remain unchanged. No key, wallet, signature, transaction submission,
+  payment or public post was used.
