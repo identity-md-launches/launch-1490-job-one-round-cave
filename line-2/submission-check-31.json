@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "record_number": 31,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "goal_byte_unchanged": true,
+  "older_records_unchanged": true,
+  "outputs_not_git_tracked": true,
+  "archive_demo_and_behavior_checks": "33 tests plus real archive demo passed",
+  "unmet_visual_requirements": []
+}

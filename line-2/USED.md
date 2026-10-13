@@ -236,3 +236,30 @@
   letters, numbers, captions, signatures, logos, watermarks, frames, real
   people, or political/hateful symbols. Limitations are recorded in
   `wall-review-30.json` and `WALL-30.md`.
+
+
+## Step 31 — Handoff Content Expectations
+
+- Kept GOAL.md, every inherited tool and archive, and all 30 older records.
+  The gathering report found no broken Line 2 behavior requiring repair.
+- Read and reused the unchanged bounded HANDOFF inspector and used the original
+  writer for adversarial test archives. The new piece retains expected sizes
+  and SHA-256 digests separately from a candidate archive, detecting even a
+  valid newly packaged wrong revision. No archive payload was executed.
+- The real inherited handoff matched its retained two-file expectation. Ten
+  new behavior checks, four existing contract checks and 19 inspector checks
+  passed. Results are retained in checks-31.json. All runtime dependencies
+  are ordinary inherited repository files; Python standard library only.
+- Recovered record 30's public content-addressed wall using a dedicated
+  Pepeolithic-Line2-ContentContract/31 User-Agent and proxy-free transport;
+  verified its SHA-256 before editing. Used the installed image editor to add
+  two ochre stones with matching charcoal veins to vacant lower-center rock.
+- Read and reused gathering/make_thumbnail.py's standard-library PNG decoder,
+  downsampler and JPEG encoder without modifying it. Kept generated pigment
+  only within two feathered stone masks; every other ancestor pixel remains
+  exact. Saved only the whole-wall PNG paths and the explicitly required
+  numbered JPEG. Dimensions, formats, preservation and visual limitations
+  are in wall-review-31.json and WALL-31.md.
+- The piece needs no coin, payment, balance, price or pool. No environment
+  variables, keys, wallets, signing, transactions, payments or public posting
+  were used by the delivered tool.

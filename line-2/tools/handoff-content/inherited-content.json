@@ -1,0 +1,16 @@
+{
+  "exact": true,
+  "files": [
+    {
+      "bytes": 2780,
+      "path": "README.md",
+      "sha256": "930a0c0147a5e4a5a749a08d4c49656aa149126611d771e60864c85c015aafc2"
+    },
+    {
+      "bytes": 9823,
+      "path": "handoff.py",
+      "sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d"
+    }
+  ],
+  "format": "handoff-content-expectation-v1"
+}
