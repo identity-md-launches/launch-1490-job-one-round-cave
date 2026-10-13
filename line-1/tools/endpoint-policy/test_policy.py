@@ -79,12 +79,15 @@ class Tests(unittest.TestCase):
 
     def test_native_capture_and_inspection_keep_relay(self):
         response = json.dumps({'jsonrpc': '2.0', 'id': 1, 'result': '0x1'}).encode()
-        with patch.object(rpc.urllib.request, 'urlopen') as network:
-            network.return_value.__enter__.return_value.read.return_value = response
+        with patch.object(rpc.urllib.request, 'build_opener') as network:
+            reply = network.return_value.open.return_value.__enter__.return_value
+            reply.status = 200
+            reply.headers = {}
+            reply.read.return_value = response
             output = io.StringIO()
             with patch.object(sys, 'argv', ['snapshot', 'eth_chainId', '--rpc', RELAY]), contextlib.redirect_stdout(output):
                 self.assertEqual(rpc.main(), 0)
-            request = network.call_args.args[0]
+            request = network.return_value.open.call_args.args[0]
             self.assertEqual(request.full_url, RELAY)
             self.assertIn('Pepeolithic', request.get_header('User-agent'))
             self.assertEqual(check.summarize(json.loads(output.getvalue()))['decimal_result'], '1')

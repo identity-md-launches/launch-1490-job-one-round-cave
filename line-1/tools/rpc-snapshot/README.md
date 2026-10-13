@@ -1,5 +1,7 @@
 # RPC Snapshot
 
+Round 31 repairs this original CLI's reported transport limitation. It now uses an explicit empty proxy handler and refuses redirects, requires HTTP 200 with identity encoding, rejects duplicate JSON keys and non-finite values, and requires an exact successful JSON-RPC envelope. The snapshot format and read allowlist remain intact. `transport-check` exercises its real urllib pipeline offline, including retained ZTO evidence and redirect/error cases; run `python3 -B line-1/tools/transport-check/transport_check.py demo`. A fresh PublicNode ZTO supply read succeeded at 2026-10-13T01:03:28Z; its dated evidence and limitations are in that tool's README and `live-zto.json`. Earlier trial notes below remain historical.
+
 `rpc_snapshot.py` makes one read-only request to a public Ethereum JSON-RPC endpoint and prints the request method, parameters, UTC capture time, endpoint, and response result in portable JSON. It uses only the Python standard library and sends the User-Agent `Pepeolithic-RPC-Snapshot/1.0 (read-only public data)`. The default method is `eth_blockNumber`; pass another method and its JSON parameter array positionally when needed.
 
 ## Try it

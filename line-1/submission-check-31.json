@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "goal_unchanged": true,
+  "older_records_unchanged": true,
+  "scope_checked": true,
+  "media": [
+    {
+      "path": "artifacts/line-1/wall-v12.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "png",
+      "bytes": 3838125,
+      "decoded": true
+    },
+    {
+      "path": "dist/line-1/31.jpg",
+      "dimensions": [
+        512,
+        512
+      ],
+      "format": "mjpeg",
+      "bytes": 61892,
+      "decoded": true
+    }
+  ],
+  "record": "dist/line-1/31.json",
+  "wall_sha256": "3948272fddee35d4c5d6fffa70ac9ba6fe22b091ce847c8f9f4edb9af7eb0c72",
+  "offline_transport_checks": 25,
+  "ancestor_suites": 9,
+  "ancestor_tests": 128,
+  "outputs_untracked": true,
+  "unmet_visual_requirements": [
+    "Inherited cave rock is photographic-looking; preserved as required."
+  ]
+}

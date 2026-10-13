@@ -16,7 +16,7 @@ class Checks(unittest.TestCase):
                        'personal_sign', 'personal_unlockAccount', 'admin_nodeInfo',
                        'eth_newFilter', 'debug_traceTransaction', '']:
             with self.subTest(method=method), patch.object(sys, 'argv', ['snapshot', method]), \
-                 patch.object(rpc.urllib.request, 'urlopen') as network, \
+                 patch.object(rpc.urllib.request, 'build_opener') as network, \
                  contextlib.redirect_stderr(io.StringIO()):
                 self.assertEqual(rpc.main(), 1)
                 network.assert_not_called()
@@ -32,11 +32,14 @@ class Checks(unittest.TestCase):
         self.assertIsNone(rpc.validate_response({'jsonrpc':'2.0','id':1,'result':None}))
 
     def test_null_response_cli_controlled(self):
-        with patch.object(sys, 'argv', ['snapshot']), patch.object(rpc.urllib.request, 'urlopen') as network, \
+        with patch.object(sys, 'argv', ['snapshot']), patch.object(rpc.urllib.request, 'build_opener') as network, \
              contextlib.redirect_stderr(io.StringIO()) as stderr:
-            network.return_value.__enter__.return_value.read.return_value = b'null'
+            response = network.return_value.open.return_value.__enter__.return_value
+            response.status = 200
+            response.headers = {}
+            response.read.return_value = b'null'
             self.assertEqual(rpc.main(), 1)
-            self.assertIn('invalid JSON-RPC', stderr.getvalue())
+            self.assertIn('inconsistent response', stderr.getvalue())
 
     def test_parameter_validation(self):
         for method, params in [('eth_blockNumber',[1]), ('eth_call',[{},'latest']),
@@ -48,9 +51,12 @@ class Checks(unittest.TestCase):
         rpc.validate_request('eth_call', [{'to':'0xd782bdea4ef02a0bd391eb9089470c8080f0a68e','data':'0x18160ddd'},'latest'])
 
     def test_response_limit(self):
-        with patch.object(sys, 'argv', ['snapshot']), patch.object(rpc.urllib.request, 'urlopen') as network, \
+        with patch.object(sys, 'argv', ['snapshot']), patch.object(rpc.urllib.request, 'build_opener') as network, \
              contextlib.redirect_stderr(io.StringIO()):
-            network.return_value.__enter__.return_value.read.return_value = b' ' * (rpc.MAX_RESPONSE_BYTES + 1)
+            response = network.return_value.open.return_value.__enter__.return_value
+            response.status = 200
+            response.headers = {}
+            response.read.return_value = b' ' * (rpc.MAX_RESPONSE_BYTES + 1)
             self.assertEqual(rpc.main(), 1)
 
     def test_offline_summary(self):

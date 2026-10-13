@@ -4,6 +4,7 @@ import argparse
 import datetime as dt
 import json
 import ipaddress
+import math
 import re
 import urllib.parse
 import sys
@@ -122,6 +123,63 @@ def validate_response(payload):
 
 
 
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    """Never leave the explicitly selected endpoint."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        raise ValueError("RPC redirects are refused")
+
+
+def strict_json(raw):
+    def pairs(items):
+        result = {}
+        for key, value in items:
+            if key in result:
+                raise ValueError("duplicate JSON key")
+            result[key] = value
+        return result
+
+    def constant(_value):
+        raise ValueError("non-finite JSON number")
+
+    def finite_float(value):
+        number = float(value)
+        if not math.isfinite(number):
+            raise ValueError("non-finite JSON number")
+        return number
+
+    return json.loads(raw, object_pairs_hook=pairs, parse_constant=constant,
+                      parse_float=finite_float)
+
+
+def capture(method, params, endpoint=DEFAULT_RPC):
+    """Perform one bounded read without proxy discovery or redirect following."""
+    validate_request(method, params)
+    validate_endpoint(endpoint)
+    body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": method,
+                       "params": params}, allow_nan=False).encode("utf-8")
+    request = urllib.request.Request(endpoint, data=body, headers={
+        "Content-Type": "application/json", "User-Agent": USER_AGENT,
+        "Accept": "application/json", "Accept-Encoding": "identity"})
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())
+    with opener.open(request, timeout=20) as response:
+        if response.status != 200:
+            raise ValueError("RPC requires HTTP 200")
+        if response.headers.get("Content-Encoding", "identity").lower() != "identity":
+            raise ValueError("compressed RPC responses are refused")
+        raw = response.read(MAX_RESPONSE_BYTES + 1)
+    if len(raw) > MAX_RESPONSE_BYTES:
+        raise ValueError("response exceeds 4 MiB limit")
+    payload = strict_json(raw)
+    if not isinstance(payload, dict) or set(payload) != {"jsonrpc", "id", "result"}:
+        raise ValueError("expected a successful exact JSON-RPC envelope")
+    result = validate_response(payload)
+    return {
+        "captured_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        "endpoint": endpoint, "method": method, "params": params, "result": result,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("method", nargs="?", default="eth_blockNumber", help="JSON-RPC method (default: eth_blockNumber)")
@@ -129,27 +187,12 @@ def main():
     parser.add_argument("--rpc", default=DEFAULT_RPC, help="public Ethereum JSON-RPC endpoint")
     args = parser.parse_args()
     try:
-        params = json.loads(args.params)
-        validate_request(args.method, params)
-        validate_endpoint(args.rpc)
-        body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": args.method, "params": params}).encode()
-        request = urllib.request.Request(args.rpc, data=body, headers={"Content-Type": "application/json", "User-Agent": USER_AGENT})
-        with urllib.request.urlopen(request, timeout=20) as response:
-            raw = response.read(MAX_RESPONSE_BYTES + 1)
-            if len(raw) > MAX_RESPONSE_BYTES:
-                raise RuntimeError("response exceeds 4 MiB limit")
-            payload = json.loads(raw.decode("utf-8"))
-        validate_response(payload)
-    except (ValueError, UnicodeError, OSError, urllib.error.URLError, TimeoutError, RuntimeError) as exc:
-        print(f"rpc-snapshot: {exc}", file=sys.stderr)
+        params = strict_json(args.params)
+        snapshot = capture(args.method, params, args.rpc)
+    except (ValueError, UnicodeError, OSError, urllib.error.URLError, TimeoutError,
+            RuntimeError, RecursionError):
+        print("rpc-snapshot: invalid request, inconsistent response, or RPC failure", file=sys.stderr)
         return 1
-    snapshot = {
-        "captured_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
-        "endpoint": args.rpc,
-        "method": args.method,
-        "params": params,
-        "result": payload["result"],
-    }
     print(json.dumps(snapshot, indent=2, sort_keys=True))
     return 0
 

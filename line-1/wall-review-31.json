@@ -1,0 +1,44 @@
+{
+  "source_record": 30,
+  "record_number": 31,
+  "source_sha256": "8dd96de42f0d35647b2361c0c8de7ec819965ad95941ebe36075926a2326b712",
+  "generated_sha256": "8fd65a567660af3ba583d2d9533c6a8ea51589c820a8d99f128a2a20ff57384d",
+  "wall_sha256": "3948272fddee35d4c5d6fffa70ac9ba6fe22b091ce847c8f9f4edb9af7eb0c72",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3838125,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 61892,
+  "addition_rectangle": [
+    770,
+    250,
+    190,
+    76
+  ],
+  "changed_pixels": 2227,
+  "changed_pixels_outside_rectangle": 0,
+  "generation_tool": "installed image.generate_image",
+  "visual_review": {
+    "status": "reviewed whole wall and 512-pixel thumbnail",
+    "pepe": "Inherited broad mouth and heavy-lidded eyes unchanged",
+    "left_hand_digits": 5,
+    "right_hand_digits": 5,
+    "digit_description": "Four horizontal finger strokes and one opposing diagonal thumb on each inherited hand",
+    "new_hands_or_stencils": 0,
+    "ancestral_marks": "No inherited marks erased, moved or redrawn; pixels outside the vacant patch are identical",
+    "prohibited_content": "No visible text, numbers, captions, signature, logo, watermark, border, frame, real person or prohibited symbol",
+    "limitations": "Inherited rock is photographic-looking; the small new passage is subdued in the thumbnail",
+    "review_authority": "Local manual visual judgment and exact byte-decoded pixel comparison"
+  },
+  "new_hands_or_stencils": 0,
+  "unmet_visual_requirements": [
+    "Inherited cave rock is photographic-looking; preserved as required."
+  ]
+}

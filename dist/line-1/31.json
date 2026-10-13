@@ -1,0 +1,30 @@
+{
+  "name": "The Sealed Passage",
+  "image": "https://api.imd.fun/artifacts/3948272fddee35d4c5d6fffa70ac9ba6fe22b091ce847c8f9f4edb9af7eb0c72",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 31
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "transport-check"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two ochre stones travel one direct path inside a closed charcoal passage."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "checks": [
+    "retained-zto-replay",
+    "exact-request",
+    "own-user-agent",
+    "no-proxy-discovery",
+    "no-default-urlopen",
+    "no-sockets",
+    "redirect-301",
+    "redirect-302",
+    "redirect-303",
+    "redirect-307",
+    "redirect-308",
+    "http-error",
+    "compression",
+    "wrong-id",
+    "boolean-id",
+    "duplicate-key",
+    "nonfinite",
+    "overflow-number",
+    "extra-field",
+    "provider-error",
+    "oversize",
+    "reject-before-wire",
+    "null-result-preserved",
+    "cli-failure-no-partial-output",
+    "cli-duplicate-params-rejected"
+  ],
+  "checks_passed": 25,
+  "limits": "Offline wire replay tests transport behavior; it is not a fresh chain observation or proof of provider honesty.",
+  "network_used": false,
+  "retained_evidence": {
+    "captured_at": "2026-10-12T22:01:30Z",
+    "sha256": "36153277456493108570367ff748920da8b76852b51ccd60224201f9b3a92e20",
+    "token": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+    "total_supply_base_units": "1000000000000000000000000000"
+  },
+  "schema": "rpc-transport-check/1",
+  "status": "passed"
+}
