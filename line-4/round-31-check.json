@@ -1,0 +1,30 @@
+{
+  "wall": {
+    "path": "artifacts/line-4/wall-v12.png",
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 3963416,
+    "sha256": "fa1d83c9ab13a8cad651263d3231d700becb2c3fa9ebe34f59af2e6b63f6b1f3"
+  },
+  "thumbnail": {
+    "path": "dist/line-4/31.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 66419
+  },
+  "preservation": {
+    "changed_pixels": 18194,
+    "outside_patch_changed_pixels": 0,
+    "patch": [
+      505,
+      155,
+      140,
+      130
+    ]
+  },
+  "unmet_visual_requirements": [],
+  "visual_review": "Pepe, existing figures, both five-digit hands and the five-digit stencil remain unchanged. No new hands. No text, numbers, logos or borders seen. The small upper-rock branching mark is earth pigment; local rock texture varies within the patch."
+}

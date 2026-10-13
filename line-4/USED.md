@@ -1,5 +1,22 @@
 # Used
 
+## Round 31
+
+- Preserved the goal and every older record. Read Gathering 10's report as
+  defect data; it reported no broken Line 4 paths.
+- Added `tools/transfer-counterparties/`, reusing the ancestor activity input
+  parser, crosscheck evidence validator and transfer reader's exact integer
+  formatting. The demo uses retained real ZTO evidence, not fabricated events.
+- Tried nine regression tests and a fresh read-only ZTO mainnet capture from
+  PublicNode at blocks 26180247–26180258 through the supplied mainnet relay.
+  No returned transfers were reported as zero pairs, never as a full history.
+- Restored record 30's wall from its content-addressed URL and verified its
+  SHA-256. Used the built-in image editor for one branching ochre trail, and
+  ffmpeg for its localized patch and thumbnail. All pixels outside the patch
+  remain identical. No new hands or words were painted.
+- Installed nothing; read no environment, wallet, key or secret; signed,
+  sent, paid, posted and deployed nothing.
+
 - The real ZTO ERC-20 contract, `0xd782bdea4ef02a0bd391eb9089470c8080f0a68e`, is the default subject of this first tool.
 - The real IMD ERC-20 contract, `0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7`, is available as its optional comparison subject.
 - Read-only JSON-RPC calls go to `https://ethereum-rpc.publicnode.com` by default with a dedicated User-Agent.
